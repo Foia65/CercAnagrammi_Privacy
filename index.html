@@ -106,24 +106,23 @@
     color: var(--text-primary);
     margin-bottom: 12px;
     display: flex;
-    align-items: baseline;
-    gap: 10px;
+    align-items: center;
+    gap: 12px;
   }
 
-  /* NUMERAZIONE MIGLIORATA: font più elegante, raffinato, stile cifre */
+  /* NUMERAZIONE COERENTE: usa Nunito Sans per uniformità */
   .num {
-    font-family: 'Lora', serif;           /* usa lo stesso serif elegante dell'h1/h2 */
-    font-size: 13px;                     /* leggermente più bilanciato */
-    font-weight: 500;                    /* medium, non troppo grassetto */
-    letter-spacing: 0.01em;              /* lieve apertura per eleganza */
-    color: #8C857C;                      /* tonalità calda e sofisticata */
-    background: transparent;
-    text-transform: none;                /* niente uppercase, naturale */
-    font-feature-settings: "tnum";       /* tabular numbers (allineamento cifre) */
-    font-variant-numeric: tabular-nums;  /* moderno, cifre allineate */
-    opacity: 0.85;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    border-right: 1px solid var(--border);
+    padding-right: 10px;
+    height: 14px;
+    display: flex;
+    align-items: center;
     flex-shrink: 0;
-    margin-top: 2px;
   }
 
   p {
@@ -205,7 +204,7 @@
   <header>
     <div class="app-label">CercAnagrammi</div>
     <h1>Privacy Policy</h1>
-    <div class="meta">Ultimo aggiornamento: aprile 2025</div>
+    <div class="meta">Ultimo aggiornamento: aprile 2026</div>
   </header>
 
   <div class="intro">
