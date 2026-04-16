@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — CercAnagrammi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:           #F7F5F2;
+    --surface:      #FFFFFF;
+    --border:       #E4E0DA;
+    --text-primary: #1A1714;
+    --text-body:    #4A4540;
+    --text-muted:   #9C948C;
+    --accent:       #2E6DB4;
+    --accent-light: #EBF2FB;
+    --green:        #2D7D5F;
+    --green-light:  #EAF5EF;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text-body);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  /* ── Header ── */
+  header {
+    margin-bottom: 52px;
+    animation: fadeUp 0.5s ease both;
+  }
+
+  .app-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-family: 'Lora', serif;
+    font-size: clamp(32px, 6vw, 48px);
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+  }
+
+  .meta {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  /* ── Intro ── */
+  .intro {
+    background: var(--green-light);
+    border-left: 3px solid var(--green);
+    border-radius: 0 8px 8px 0;
+    padding: 20px 24px;
+    margin-bottom: 52px;
+    font-size: 14px;
+    color: var(--text-body);
+    animation: fadeUp 0.5s ease 0.08s both;
+  }
+
+  .intro strong {
+    color: var(--green);
+    font-weight: 600;
+  }
+
+  /* ── Divider ── */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 44px 0;
+  }
+
+  /* ── Sections ── */
+  section {
+    margin-bottom: 40px;
+    animation: fadeUp 0.5s ease 0.12s both;
+  }
+
+  h2 {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .num {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  p {
+    color: var(--text-body);
+    margin-bottom: 10px;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  /* ── Info box ── */
+  .box {
+    background: var(--accent-light);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 14px 0;
+    font-size: 14px;
+    color: var(--text-body);
+  }
+
+  .box strong {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* ── Contact ── */
+  .contact-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-top: 14px;
+    display: inline-block;
+  }
+
+  .contact-card .label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+  }
+
+  .contact-card a {
+    font-size: 14px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .contact-card a:hover { text-decoration: underline; }
+
+  /* ── Footer ── */
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  footer span {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  /* ── Animation ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="app-label">CercAnagrammi</div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">Ultimo aggiornamento: aprile 2025</div>
+  </header>
+
+  <div class="intro">
+    <strong>Nessun dato personale viene raccolto.</strong> CercAnagrammi è un'applicazione che funziona interamente sul tuo dispositivo. Non esistono server, account, analytics o tracciamenti di alcun tipo. Questa policy lo documenta formalmente.
+  </div>
+
+  <section>
+    <h2><span class="num">01</span> Dati raccolti</h2>
+    <p>CercAnagrammi non raccoglie, trasmette, archivia né elabora alcun dato personale dell'utente.</p>
+    <div class="box">
+      <strong>L'app funziona completamente offline.</strong> Tutte le ricerche vengono eseguite localmente sul dispositivo, interrogando un database incluso nel pacchetto dell'app. Nessun testo inserito lascia mai il dispositivo.
+    </div>
+    <p>Non sono presenti account utente, profili, identificatori univoci, log di utilizzo o qualsiasi forma di telemetria.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span> Permessi richiesti</h2>
+    <p>CercAnagrammi non richiede alcun permesso di sistema. Non accede a fotocamera, microfono, posizione, contatti, libreria foto, rete o qualsiasi altra risorsa del dispositivo.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span> Servizi di terze parti</h2>
+    <p>CercAnagrammi non integra SDK di terze parti, librerie di analytics, reti pubblicitarie, strumenti di crash reporting o servizi di autenticazione esterni.</p>
+    <p>Non vengono condivisi dati con terze parti perché non esistono dati da condividere.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span> Dati dei minori</h2>
+    <p>CercAnagrammi è uno strumento linguistico adatto a tutte le età. Poiché non raccoglie alcun dato, non vi è alcun trattamento di informazioni riferibili a minori di 13 anni o di qualsiasi altra fascia d'età.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span> Modifiche a questa policy</h2>
+    <p>Eventuali aggiornamenti saranno pubblicati su questa pagina con la data di revisione aggiornata. In caso di modifiche sostanziali, verrà aggiornata anche la scheda dell'app sull'App Store.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span> Contatti</h2>
+    <p>Per qualsiasi domanda relativa a questa privacy policy:</p>
+    <div class="contact-card">
+      <div class="label">Sviluppatore</div>
+      <a href="mailto:privacy@example.com">privacy@example.com</a>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <footer>
+    <span>CercAnagrammi © 2025</span>
+    <span>Tutti i diritti riservati</span>
+  </footer>
+
+</div>
+</body>
+</html>
